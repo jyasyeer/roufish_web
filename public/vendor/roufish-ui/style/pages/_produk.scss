@@ -1,0 +1,31 @@
+#jumbotron{
+    .jumbotron{
+        background-image: url('../../images/jumbotron.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        position: relative;
+        padding: 180px 0px;
+        .filter{
+            position: absolute;
+            background-color: black;
+            opacity: 50%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .content{
+            position: relative;
+            h1{
+                color:#fff;
+                font-weight: 700;
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+#produk{
+    margin: 80px 0px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Roufish: Official Site</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-primary navbar-roufish">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="./images/logo.png" alt="Bootstrap" width="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lelang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="" class="btn btn-light">Masuk</a>
+                    <a href="" class="btn btn-primary text-light">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="breadcrumb" class="my-4">
+        <div class="container">
+            <a href="" class="btn btn-outline-primary">Back</a>
+        </div>
+    </section>
+
+    <section id="profil" class="my-5">
+        <div class="container">
+            <div class="card rounded-5 border-0 p-4">
+                <div class="card-body">
+                    <h3 class="fw-bold">Profil Saya</h3>
+                    <p>Kelola informasi profil anda</p>
+
+                    <form action="">
+                        <div class="mb-3 row">
+                            <label for="name" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-6">
+                                <input name="name" value="{{ auth()->user()->name }}" type="name" class="form-control"
+                                    id="name">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-6">
+                                <input name="email" type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="password" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                            <div class="col-sm-6">
+                                <textarea type="alamat" class="form-control" id="alamat"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                            </div>
+                            <div class="col-6"><button class="btn btn-primary">Simpan</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-4">About Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center gap-3 mb-4">
+                            <div class="social-icon"><i class="bi bi-instagram"></i>
+                            </div>
+                            Instagram
+                        </li>
+                        <li class="d-flex align-items-center gap-3 mb-4">
+                            <div class="social-icon"><i class="bi bi-twitter-x"></i>
+                            </div>
+                            Twitter / X
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <div class="social-icon"><i class="bi bi-whatsapp"></i>
+                            </div>
+                            Whatsapp
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <h5 class="fw-bold mb-4">Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <h6 class="fw-semibold">Alamat</h6>
+                            <p>Jl. Talang Tembaga, Margadadi, Kec. Indramayu, Kabupaten Indramayu, Jawa Barat 45212</p>
+                        </li>
+                        <li class="mb-4">
+                            <h6 class="fw-semibold">Telephone</h6>
+                            <p>0823192834</p>
+                        </li>
+                        <li class="">
+                            <h6 class="fw-semibold">Email</h6>
+                            <p>roufish@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-4">Maps</h5>
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/maps.png" class="w-100  rounded-5" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+</body>
+
+</html>

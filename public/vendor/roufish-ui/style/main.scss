@@ -1,0 +1,11 @@
+@import "colors";
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+@import "global";
+@import "fonts";
+@import "icons";
+
+@import "pages/index";
+@import "pages/produk";
+@import "pages/login";
+@import "pages/register";

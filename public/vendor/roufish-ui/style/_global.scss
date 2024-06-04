@@ -1,0 +1,36 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #DFEAEC;
+}
+
+.navbar-roufish{
+    .nav-link{
+        &.active {
+            color: #2C88D9;
+        }
+        &:hover {
+            color: #2C88D9;
+        }
+    }
+}
+
+footer{
+    padding: 40px 0px;
+    background-color: $primary;
+    color: #fff;
+    .social-icon{
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 50%;
+        position: relative;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
